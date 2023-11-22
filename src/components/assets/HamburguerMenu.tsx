@@ -4,6 +4,7 @@ import NextLink from 'next/link'
 import { Button, Flex, IconButton, Link, useColorModeValue } from '@chakra-ui/react';
 import { useState } from 'react';
 import { IoIosMenu, IoMdClose } from "react-icons/io";
+import { ButtonSuccess } from './ButtonSuccess';
 
 export function MenuHamburguer() {
   const [display, ChangeDisplay] = useState('none')
@@ -29,25 +30,7 @@ export function MenuHamburguer() {
               _hover={{ textDecoration: 'none' }}
             >Doc</Link>
           </NextLink>
-          <NextLink href='/Login' passHref>
-            <Button
-            px={3}
-            bg={useColorModeValue('#1F7368', 'gray.900')}
-            textColor={'white'}
-            rounded={'md'}
-            _hover={{
-              transform: 'translateY(-2px)',
-              boxShadow: 'lg',
-            }}>
-              <Link color='#233D45'
-                variant='ghost'
-                aria-label='Login'
-                width='100%'
-                textColor='white'
-                _hover={{ textDecoration: 'none' }}
-              >Login</Link>
-            </Button>
-          </NextLink>
+          <ButtonSuccess path='/Login' text='Login'/>
 
         </Flex>
         <IconButton
@@ -100,7 +83,7 @@ export function MenuHamburguer() {
               aria-label='About'
               width='100%'
               _hover={{ textDecoration: 'none' }}
-            >About</Link>
+            >Login</Link>
           </NextLink>
         </Flex>
       </Flex>

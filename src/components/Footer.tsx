@@ -2,12 +2,9 @@
 
 import {
   Box,
-  chakra,
   Container,
   Stack,
   Text,
-  useColorModeValue,
-  VisuallyHidden,
   Image
 } from '@chakra-ui/react'
 
@@ -23,7 +20,9 @@ export function Footer() {
       color='#233D45'
       as='footer'
       width='full'
-      minH='192px'>
+      minH='192px'
+      boxShadow='lg'
+      >
       <Container
         as={Stack}
         maxW='full'

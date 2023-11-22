@@ -10,7 +10,7 @@ export function Header() {
   return (
     <>
       <Grid templateColumns='repeat(12, 1fr)' p={3}>
-        <GridItem as='div' h='max-content' m={'1rem'} colSpan={{ base: 10, md: 5 }} colStart={{md: 2}} p={3} color='#233D45'> 
+        <GridItem as='div' h='max-content' m={'1rem'} colSpan={{ base: 10, md: 5 }} colStart={{base:2, md: 2}} p={3} color='#233D45'> 
           <Text as='h1' fontWeight='bold' fontSize='5xl' lineHeight={1} mb='1.5rem'>
             Do you need to know something but don't have time to research it?
           </Text>

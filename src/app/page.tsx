@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header";
 import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 
@@ -8,7 +9,7 @@ export default function Home() {
         <title>Home Page | Makima</title>
       </Head>
       <Box as="main">
-        <h1>this is the Home Page</h1>
+        <Header />
       </Box>
     </>
   )

@@ -21,7 +21,9 @@ export function Footer() {
     <Box
       bg='#1CBB9B'
       color='#233D45'
-      as='footer'>
+      as='footer'
+      width='full'
+      minH='192px'>
       <Container
         as={Stack}
         maxW='full'
@@ -31,10 +33,10 @@ export function Footer() {
         align={'start'}
         gap={10}
         p='1rem'
-          w='5xl'
+          w='80%'
           mx='auto'>
 
-        <Stack direction='row' spacing={16}>
+        <Stack direction='row' spacing={16} justify='space-between'>
           <Stack direction='column' spacing={1}>
             <Box as='h2'
               fontSize='1.2rem'
@@ -74,20 +76,21 @@ export function Footer() {
               fontSize='1.2rem'
               fontWeight='bold'
               ml='-4px'
+              
             >Contact
             </Box>
-            <Box as="a" href='mailto:exemplo@gmail.com' cursor='pointer' display='inline-flex' alignItems='center' gap={1}>
+            <Box as="a" href='mailto:exemplo@gmail.com' cursor='pointer' display='inline-flex' alignItems='center' gap={1} wordBreak='break-all'>
               <IoMailOutline />
-              exemplo@gmail.com
+              <Text>exemplo@gmail.com</Text>
             </Box>
             <Box as="a" href='tel:+5573999999999' cursor='pointer' display='inline-flex' alignItems='center' gap={1}>
               <MdOutlinePhoneEnabled />
-              +5573999999999
+              <Text>+5573999999999</Text>
             </Box>
           </Stack>
         </Stack>
 
-        <Stack align='center' mx='auto'>
+        <Stack align='center' justify='flex-end' display={{base: 'none', md: 'flex'}}>
           <Image src='/logo-semFundo.png' w='14rem' h='10rem' alt='Logo com iniciais Do Projeto Makima' />
         </Stack>
       </Container>

@@ -1,4 +1,4 @@
-FROM node:21
+FROM --platform=linux/arm64 node:21
 
 WORKDIR /app
 COPY package*.json ./

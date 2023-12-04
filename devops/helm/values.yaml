@@ -39,7 +39,7 @@ makima-ms:
   service:
     type: ClusterIP
     port: 80
-    targetPort: 8080
+    targetPort: 3000
   # livenessProbe:
   #   httpGet:
   #     path: /
